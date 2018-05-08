@@ -1,0 +1,175 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 5;
+}
+#img{
+    margin-top: 20px;
+    left: 0;
+    
+}
+.background{
+    width:100%;
+    position: fixed;
+    z-index: -1;
+    left: 0;
+}
+#Title{
+    margin-top: 400px;
+}
+#About{
+    background-color: #e6e6e6;
+
+}
+.logo {
+    display: block;
+    z-index: 3;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+#Services {
+    background-color: #333333;
+    color: #F7F9F9;
+    font-size: 20px;
+}
+li {
+    display: block;
+}
+.skills::before {
+    font-family: "Glyphicons Halflings";
+    content: "\e080";
+    font-size: 18px;
+    float: left;
+    margin-top: 4px;
+    margin-right: 5px;
+    margin-left: -17px;
+  }
+#Expertise{
+    background-color:#F7F9F9;
+}
+.expert{
+    display: inline-block;
+}
+.Dad {
+    float: right;
+    margin-top: auto;
+    width: 20%;
+    margin-bottom: auto;
+}
+.content{
+    padding: 60px;
+}
+
+@media only screen and (min-width : 768px) {
+.is-table-row {
+    display: table;
+}
+.is-table-row [class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+}
+}
+
+#quote-carousel 
+{
+  padding: 0 10px 30px 10px;
+  margin-top: 30px 0px 0px;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control
+{
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+/* Previous button  */
+#quote-carousel .carousel-control.left 
+{
+  left: -12px;
+}
+/* Next button  */
+#quote-carousel .carousel-control.right 
+{
+  right: -12px !important;
+}
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators 
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li 
+{
+  background: #c0c0c0;
+}
+#quote-carousel .carousel-indicators .active 
+{
+  background: #333333;
+}
+
+/* End carousel */
+
+.item blockquote {
+    border-left: none; 
+    margin: 0;
+}
+
+
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+
+
+/**
+  MEDIA QUERIES
+*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    #quote-carousel 
+    {
+      margin-bottom: 0;
+      padding: 0 40px 30px 40px;
+      margin-top: 30px;
+    }
+    
+}
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) { 
+    
+    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+    
+    #quote-carousel .carousel-indicators {
+        /*bottom: -20px !important; */
+    }
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+    }
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 20px;
+        height: 20px;
+    }
+}
