@@ -1,8 +1,12 @@
+*{
+    font-family: 'Verdana';
+    overflow-x: hidden;
+}
 .navbar {
     position: fixed;
     width: 100%;
     top:0;
-    z-index: 5;
+    z-index: 20;
 }
 #img{
     margin-top: 20px;
@@ -16,12 +20,83 @@
     left: 0;
 }
 #Title{
-    margin-top: 400px;
+    background: linear-gradient(rgb(55, 108, 221),white)
+}
+/*small screen mobile viewing*/
+@media only screen and (max-width:480px){
+    #Title{margin-top: 200px;} 
+    .content{padding: 20px;} 
+    .big-icon{font-size: 50px;}
+    #Testimonials{padding: 0 5px 30px 5px;}
+    #Testimonials p {font-size: 15px;}
+    .email{width: 100%;
+    font-size: 18px;}
+    .contact{
+        text-align: center;
+        width:100%;
+    }
+    .fa-envelope{text-align: center; 
+    }
+    #Services {
+        background-color: #333333;
+        color: #F7F9F9;
+        font-size: 18px;
+    }
+    .carousel-indicators{
+        position: relative;
+        bottom:-250px;
+    }
+    .item{
+        padding:2px;
+    }
+    .blockquote{
+        border-left: none;
+    }
+}
+/*larger screens*/
+@media only screen and (min-width:480px){
+#Title{margin-top: 400px;} 
+.content{padding: 30px; margin:auto;}  
+.col-md-6{padding:0;}
+.email{ width: 100%; bottom:0;}
+.fa-envelope{text-align: center;}
+.big-icon{font-size:26px;}
+#Services {
+    background-color: #333333;
+    color: #F7F9F9;
+    font-size: 22px;   
+}
+.carousel-indicators{
+    position: relative;
+    bottom:-300px;
+}
+.item{
+    padding: 30px;
+}
+}
+
+
+ul{
+    margin-top:10px;
 }
 #About{
     background-color: #e6e6e6;
 
 }
+.emailcontact{
+    font-style: Verdana;
+    display:block;
+    width: 100%;
+    bottom: 0;
+}
+
+.fa{
+    margin: 5px;
+}
+
+
+
+
 .logo {
     display: block;
     z-index: 3;
@@ -34,11 +109,7 @@
     margin: 0;
 }
 
-#Services {
-    background-color: #333333;
-    color: #F7F9F9;
-    font-size: 20px;
-}
+
 li {
     display: block;
 }
@@ -51,8 +122,16 @@ li {
     margin-right: 5px;
     margin-left: -17px;
   }
+.skills{
+    margin: 10px;
+
+  }
 #Expertise{
     background-color:#F7F9F9;
+}
+.Jobrole {
+    display: block;
+    margin: 10px;
 }
 .expert{
     display: inline-block;
@@ -63,9 +142,17 @@ li {
     width: 20%;
     margin-bottom: auto;
 }
-.content{
-    padding: 60px;
+
+.fa {
+    display: block;
+    height: 5%;
 }
+.linkedin {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 @media only screen and (min-width : 768px) {
 .is-table-row {
@@ -78,63 +165,72 @@ li {
 }
 }
 
+#Testimonials {
+    min-height: 357px;
+}
+
 #quote-carousel 
 {
   padding: 0 10px 30px 10px;
   margin-top: 30px 0px 0px;
 }
+.item{
+    border-radius: 50px;
+    background-color:#333333;
+}
+
+.item p {
+    color: #c0c0c0;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
 
 /* Control buttons  */
-#quote-carousel .carousel-control
+.carousel-control
 {
   background: none;
   color: #222;
-  font-size: 2.3em;
+  font-size: 4em;
   text-shadow: none;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 /* Previous button  */
-#quote-carousel .carousel-control.left 
+.carousel-control.left 
 {
   left: -12px;
 }
 /* Next button  */
-#quote-carousel .carousel-control.right 
+.carousel-control.right 
 {
   right: -12px !important;
 }
 /* Changes the position of the indicators */
-#quote-carousel .carousel-indicators 
+.carousel-indicators 
 {
   right: 50%;
   top: auto;
-  bottom: 0px;
+  bottom: -50px;
   margin-right: -19px;
 }
 /* Changes the color of the indicators */
-#quote-carousel .carousel-indicators li 
+.carousel-indicators li 
 {
   background: #c0c0c0;
 }
-#quote-carousel .carousel-indicators .active 
+.carousel-indicators .active 
 {
   background: #333333;
+}
+.carousel-indicators{
+    position: relative;
 }
 
 /* End carousel */
 
-.item blockquote {
-    border-left: none; 
-    margin: 0;
+.item blockquote { 
+    margin: 10px;
 }
 
-
-.item blockquote p:before {
-    content: "\f10d";
-    font-family: 'Fontawesome';
-    float: left;
-    margin-right: 10px;
-}
 
 
 
@@ -158,18 +254,33 @@ li {
     
     /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
     
-    #quote-carousel .carousel-indicators {
-        /*bottom: -20px !important; */
+    .carousel-indicators {
+        bottom: 0px !important; 
     }
-    #quote-carousel .carousel-indicators li {
+    .carousel-indicators li {
         display: inline-block;
         margin: 0px 5px;
         width: 15px;
         height: 15px;
     }
-    #quote-carousel .carousel-indicators li.active {
+    .carousel-indicators li.active {
         margin: 0px 5px;
         width: 20px;
         height: 20px;
     }
 }
+.footer {
+    background-color: #222;
+    color: #F7F9F9;
+
+    text-align: center;
+}
+.contactDetails{
+    display: block;
+    padding:20px;
+    
+}
+#contact .row{
+    margin-bottom: auto;
+    margin-top: auto;
+}    

@@ -13,8 +13,11 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <!--FontAwesome Glyphs-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="FreshHome.css">
+    
 </head>
 <body onload="equalHeight()" data-spy="scroll" data-target=".navbar" data-offset="50">
 
@@ -34,19 +37,20 @@
                     <li ><a href="#Services"><strong>Services</strong></a></li>
                     <li ><a href="#Expertise"><strong>Expertise</strong></a></li>
                     <li><a href="#Testimonials"><strong>Testimonials</strong></a></li>
+                    <li><a href="#contact"><strong>Contact</strong></a></li>
                 </ul>
         </div>
     </nav>
 
     <div class="container-fluid no-margin" id="img">
-        <img class="background img-responsive no-margin" src="http://media.gettyimages.com/photos/woman-checking-quality-of-coffee-picture-id528181173?s=170667a&w=1007" alt="demo-img">
+        <img class="background img-responsive no-margin" src="https://www.publicdomainpictures.net/pictures/100000/velka/clouds-in-blue-sky-14094113785iy.jpg" alt="demo-img">
     </div>
 
     <div class="jumbotron jumbotron-fluid no-margin" id="Title">
 
         <div class="container-fluid">
 
-        <img class="img-responsive logo" src="https://lh6.googleusercontent.com/PT8sxVj6G701EjQplDwe1oPGOqc3yU_CDQuIOVIb5EnRzHkv9DTD48D9fR9nKMgRuhxfgm0DaqotRRgeTX5_=w1920-h855-rw">
+        <img class="img-responsive logo" src="Assets/FPOE.png">
 
         <h1 class="text-center">
         <small> Technical Food Manufacturing Support and Solutions Management Consultancy </small>
@@ -67,6 +71,12 @@
                         This has also included improving preparation readiness for UK retailer standards (e.g. TFMS), ongoing root cause solution and enhancement of site technical and operational capabilities for a variety of technical challenges in food and drink manufacturing operations.
                 </p>
                 </div>
+                
+                <div class="emailcontact">
+                    <a class=" email btn btn-primary float-left" href="mailto:peterjones@freshpairofeyesltd.co.uk" role="button"><i class="fa fa-envelope text-center big-icon" ></i>peterjones@freshpairofeyesltd.co.uk</a>
+                </div>
+                    
+                
             </div>
 
             <div class="col-md-6" id="Services">
@@ -93,37 +103,39 @@
 
         <div class="float-left"> 
             <ul>
-                <li>2009 - 2015: <strong> Lead Technical Food Audit Manager: </strong>
+                <li class="Jobrole">2009 - 2015: <strong> Lead Technical Food Audit Manager: </strong>
                 </br>
-                Involved in the development and implementation of supplier audit and auditor standards. Including performing over
+                <small>Involved in the development and implementation of supplier audit and auditor standards. Including performing over
                     audits (450+), managing a auditor witness programme (30+) and auditor calibration meetings (10+). Key consult and
                     update responsibility for various standards and codes of practices, e.g. TFMS, Contents Control, Allergens, Approvals,
-                    Foreign Object Detection, Packing in Glass, Thermal process.</li>
-                <li>1985 - 2009: <strong>various UK based food manufacturing technical roles </strong>
+                    Foreign Object Detection, Packing in Glass, Thermal process.</small></li>
+                <li class="Jobrole">1985 - 2009: <strong>various UK based food manufacturing technical roles </strong>
                 </br>
-                 successfully implementing enhanced operational microbiological, GMP, product, process quality, HACCP, supplier standards and systems assurance across several competitive food manufacturing companies e.g. United Biscuits, St Ivel, RHM, ECL. Variously as company Microbiologist, Supplier Assurance Manager, Technical Manager and Director with various retailer/food service customer (e.g. Sainsbury’s, Marks and Spencer, Whitbread,) facing roles.</li>
+                 <small>successfully implementing enhanced operational microbiological, GMP, product, process quality, HACCP, supplier standards and systems assurance across several competitive food manufacturing companies e.g. United Biscuits, St Ivel, RHM, ECL. Variously as company Microbiologist, Supplier Assurance Manager, Technical Manager and Director with various retailer/food service customer (e.g. Sainsbury’s, Marks and Spencer, Whitbread,) facing roles.</small></li>
             </ul>
             
         </div>
+        <button class="text-center linkedin"><a href="https://www.linkedin.com/in/peterjonesbsc/" target="_blank"><i class="fa fa-linkedin text-center big-icon"></i></a></button>
         </div>
     </div>
 
-    <div id="Testimonials" class="jumbotron jumbotron-fluid no-margin">
-    <div class="container-fluid no-margin">
+    <div  class="jumbotron jumbotron-fluid no-margin">
+    <div id="Testimonials" class="container-fluid no-margin">
             <div class="row">
               <div class='col-md-offset-2 col-md-8 text-center'>
               <h2>Testimonials</h2>
               </div>
             </div>
+            
             <div class='row'>
               <div class='col-md-offset-2 col-md-8'>
                 <div class="carousel slide" data-ride="carousel" id="quote-carousel">
-                  <!-- Bottom Carousel Indicators -->
+                <!-- Bottom Carousel Indicators -->
                   <ol class="carousel-indicators">
                     <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
                     <li data-target="#quote-carousel" data-slide-to="1"></li>
                     <li data-target="#quote-carousel" data-slide-to="2"></li>
-                  </ol>
+                  </ol>  
                   
                   <!-- Carousel Slides / Quotes -->
                   <div class="carousel-inner">
@@ -166,7 +178,7 @@
                   </div>
                 </div>                          
               </div>
-            </div>
+            </div> 
           </div>
    
     </div>
@@ -176,10 +188,27 @@
   //Set the carousel options
   $('#quote-carousel').carousel({
     pauseOnHover: true,
-    interval: 2000,
+    interval: 6000,
   });
     });
 
 </script>
+
+
+
 </body>
+<footer id="contact" class="footer container-fluid">
+    <div class="row">
+        <div class="contactDetails col-md-6">
+        <i class="fa fa-envelope big-icon"></i>
+        <a href="mailto:peterjones@freshpairofeyesltd.co.uk">peterjones@freshpairofeyesltd.co.uk</a> or 
+        <a href="mailto:peterbjonsey@aol.com">peterbjonsey@aol.com</a>
+        </div>
+        <div class="contactDetails col-md-6">
+            <i class="fa fa-phone big-icon"></i>
+        <a href="tel:+44 7852 958 015">+44 7852 958 015 </a> or  
+        <a href="tel:+44 7828 189241"> +44 7828 189241 </a>( back up private number)  
+        </div> 
+    </div>  
+</footer>
 </html>
